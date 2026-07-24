@@ -192,7 +192,7 @@ body{
 
 .even-box-img img{
     width: 100%;
-    height: 80px;
+    height: auto;
     object-fit: cover;
 }
 
@@ -201,5 +201,144 @@ body{
 }
 
 .even-content h3{
-    
+    font-size:1rem;
+    margin: 0 0 8px 0;
+}
+
+.even-content p{
+    font-size: 1rem;
+    color: #0df001;
+    margin: 0 0 8px 0;
+}
+
+.read-more{
+    font-size: 1rem;
+    color: #3f51b5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.read-more:hover{
+ text-decoration: underline;
+}
+
+.course-section{
+    margin-top: var(--spacing-xl);
+}
+
+.section-title{
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    font-size: 2rem;
+}
+
+.courses-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: var(--spacing-lg);
+}
+
+.course-card{
+    background-color: rgb(251, 251, 255);
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid rgb(224, 12, 12);
+    transition: 0.3s;
+}
+
+.course-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,08);
+}
+
+.course-card img{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.course-content h3{
+    margin: 0;
+    padding-left:var(--spacing-md);
+}
+
+.course-tag{
+    color: gray;
+    font-size: 0.9rem;
+    margin:10px 0;
+}
+
+.thesis-section{
+    margin-top: var(--spacing-xl);
+}
+.section-title{
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+
+.thesis-container{
+    display: flex;
+    gap: var(--spacing-xl)
+}
+
+.thesis-left{
+    width: 60%;
+}
+
+.thesis-left video{
+    width: 100%;
+    border-radius: 6px;
+}
+
+.thesis-left h3{
+    margin-top: var(--spacing-md);
+}
+
+.thesis-left p {
+    columns:gray;
+    line-height: 1.6;
+}
+
+.thesis-right{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+.thesis-right h4{
+    margin-top: var(--spacing-md);
+}
+
+.thesis-right p {
+    columns:gray;
+    line-height: 1.6;
+}
+
+.footer{
+    margin-top: var(--spacing-xl);
+    border-top: 1px solid #ddd;
+    padding: var(--spacing-lg) 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p{
+    margin: 0;
+    color: grey;
+}
+
+.footer-link{
+    display: flex;
+    gap: 20px;
+}
+
+.footer-link a{
+    color:gray;
+    text-decoration: none;
+}
+
+.footer-link a:hover{
+    color:blue;
 }
