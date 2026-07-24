@@ -7,6 +7,7 @@
   --spacing-lg: 24px;
   --spacing-xl: 32px; 
 }
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -14,331 +15,596 @@
 }
 
 body{
-    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
-    background-color: antiquewhite;
-    color: black;
-    line-height: 1.6;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  background-color: white; 
+  color: black;
+  line-height: 1.6;
 }
 
 .header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 64px;
-    padding: 0 var(--spacing-lg);
-    background-color: rgb(255, 252, 252);
-    border-bottom: 2px solid black;
-    margin-bottom: var(--spacing-xl);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px; 
+  padding: 0 var(--spacing-lg); 
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0; 
+  margin-bottom: var(--spacing-xl); 
 }
 
 .logo-container{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.logo-img{
-    height: 35px;
-    width: auto;
-}
-.logo-text{
-    font-weight: bold;
-    font-size: 1.1rem;
-    letter-spacing: 0.5px;
-    color: black;
-}
-.logo-dark{
-    color: gray;
-    font-weight: normal;
-    margin-left: -5px;
-}
-.nav-menu{
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.nav-menu a{
-    text-decoration: none;
-    color: #3f51b5;
-    font-size: 1rem;
-    transition: color 0.2 ease;
+.logo-img{
+  height: 35px;
+  width: auto;
 }
+
+.logo-text{
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  color: black;
+}
+
+.logo-dark{
+  color: #b8b4b4;
+  font-weight: normal;
+  margin-left: -10px;
+}
+
+.nav-menu{
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333333; 
+  font-size: 1rem;
+  transition: color 0.2 ease;
+}
+
 .nav-menu a:hover{
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
-.nav-signing{
-    font-weight: 600;
-    color: var(--primary-color) !important;
+
+.nav-signin{
+  font-weight: 600;
+  color: var(--primary-color) !important;
 }
 
 /*hero-section*/
+
 .hero-section{
-    display: flex;
-    background-color: ver(--bg-light);
-    border-radius: 6px;
-    margin-bottom: var(--spacing-md);
-    overflow: hidden;
+  display: flex;
+  background-color: var(--bg-light); 
+  border-radius: 0; 
+  margin: 0 0 var(--spacing-xl) 24px; 
+  overflow: hidden;
 }
-.box-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+
+.box-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;    
 }
 
 .box-hero-img{
-    width: 60%;
-    min-height: 250px;
+  width: 60% ;
+  min-height: 250px;
 }
 
-.hero-content{
-    width: 40%;
-    min-height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 24px ;
+.hero-content {
+  width: 40%;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 24px;      
+  padding-right: 24px; 
 }
 
-.hero-content h1{
-    margin-bottom: 24px;
+.hero-content h1 {
+
+  margin-bottom: 24px;     
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #212121; 
 }
 
-.btn-start{
-    margin-top: 8px;
-    margin-bottom: 8px;
-    align-self: flex-start;
-    background-color: #333333;
-    color: white;
-    padding: 8px 16px;
-    border:none;
-    cursor: pointer;
+.hero-content p {
+  color: #555555;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+   
 }
 
-.main-information{
-    display: flex;
-    gap: var(--spacing-lg);
-}
-.feature-column{
-    width: 60%;
-    background-color: #fff;
-    border: 1px solid whitesmoke;
-    border-radius: 6px;
-    padding: var(--spacing-xl);
+.btn-start {
+  margin-top: 8px;        
+  margin-bottom: 8px;     
+  background-color: #333333; 
+  color: white;              
+  padding: 12px 24px;       
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0; 
+  transition: background-color 0.2s ease;
+  width: 80%;
+  height: 50px;
 }
 
+.btn-start:hover {
+  background-color: #555555; 
+}
+
+.main-container{
+  display: flex;
+  gap: var(--spacing-lg);
+  margin: 0 0 var(--spacing-xl) 24px; 
+}
+
+.featured-column{
+  width: 60%;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius:6px ;
+  padding: var(--spacing-xl); 
+}
 .column-box-img{
-    margin-bottom: var(--spacing-lg);
-    border-radius: 4px;
-    overflow: hidden;    
+  margin-bottom: var(--spacing-lg); 
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .column-box-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .column-content{
-    padding: var(--spacing-sm);
+  padding: var(--spacing-sm) 0;
 }
 
 .column-content h2{
-    font-size: 1.5rem;
-    margin-top: 0;
-    margin-bottom: var(--spacing-md);
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: var(--spacing-lg); 
 }
 
 .column-content .quote{
-    font-style: italic;
-    line-height: 1.5;
-    margin-bottom: var(--spacing-sm);
+  font-style:italic ;
+  line-height: 1.5;
+  margin-bottom: var(--spacing-sm); 
 }
 
 .column-content .author{
-    font-size: 1rem;
-    color: #f40000;
-    margin: 0;
+  font-size: 1rem;
+  color: #888;
+  margin: 0;
 }
 
 .side-column{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-md)
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
 }
 
-.even-card{
-    display:flex;
-    background-color: #e0e0e0;
-    border: #333333;
-    padding: 12px;
-    align-items: center;
-    transition: background-color 0.2 ease;
+.event-card:hover {
+  background-color: #f1f5f9; 
+  cursor: pointer;        
 }
 
-.even-card.active{
-    background-color: #3f51b5;
-    border-color: #f40000;
+.event-card{
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 16px; 
+  align-items: center;
+  transition: background-color 0.2 ease;
 }
 
-.even-box-img{
-    width: 35%;
-    flex-shrink: 0;
-    border-radius: 4px;
-    overflow: hidden;
-    margin-right: var(--spacing-md);
+.event-card.active{
+  background-color: #eceff1;
+  border-color: #cbd5e1;
 }
 
-.even-box-img img{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+.event-box-img{
+  width: 35%;
+  flex-shrink: 0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-right: var(--spacing-md); 
 }
 
-.even-content{
-    width: 65%;
+.event-box-img img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
-.even-content h3{
-    font-size:1rem;
-    margin: 0 0 8px 0;
+.event-content{
+  width: 65%;
 }
 
-.even-content p{
-    font-size: 1rem;
-    color: #0df001;
-    margin: 0 0 8px 0;
+.event-content h3{
+  font-size: 1rem;
+  margin: 0 0 8px 0; 
+}
+
+.event-content p{
+  font-size: 1rem;
+  color: #666;
+  margin: 0 0 8px 0; 
 }
 
 .read-more{
-    font-size: 1rem;
-    color: #3f51b5;
-    text-decoration: none;
-    font-weight: 600;
+  font-size: 1rem;
+  color: blue;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .read-more:hover{
- text-decoration: underline;
+  text-decoration: underline;
 }
 
-.course-section{
-    margin-top: var(--spacing-xl);
+.courses-section{
+  margin-top: var(--spacing-xl);
+  padding: var(--spacing-xl) 72px; 
+  background-color: var(--bg-light); 
 }
 
 .section-title{
-    text-align: center;
-    margin-bottom: var(--spacing-xl);
-    font-size: 2rem;
+  text-align: center;
+  margin-bottom: var(--spacing-xl); 
+  font-size: 2rem;
 }
 
 .courses-grid{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: var(--spacing-lg);
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: var(--spacing-xl); 
 }
 
 .course-card{
-    background-color: rgb(251, 251, 255);
-    border-radius: 6px;
-    overflow: hidden;
-    border: 1px solid rgb(224, 12, 12);
-    transition: 0.3s;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  transition: 0.3s;
 }
 
 .course-card:hover{
-    transform: translateY(-5px);
-    box-shadow: 0 8px 18px rgba(0,0,0,08);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 08)
 }
 
 .course-card img{
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.course-content{
+  padding: var(--spacing-md); 
 }
 
 .course-content h3{
-    margin: 0;
-    padding-left:var(--spacing-md);
+  margin: 0;
 }
 
 .course-tag{
-    color: gray;
-    font-size: 0.9rem;
-    margin:10px 0;
+  color: gray;
+  font-size: 0.9rem;
+  margin: 8px 0; 
 }
 
 .thesis-section{
-    margin-top: var(--spacing-xl);
-}
-.section-title{
-    text-align: center;
-    margin-bottom: var(--spacing-xl);
+  margin: var(--spacing-xl) 24px 0 24px; 
 }
 
+.section-title{
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
 
 .thesis-container{
-    display: flex;
-    gap: var(--spacing-xl)
+  display: flex;
+  gap: var(--spacing-lg); 
 }
 
 .thesis-left{
-    width: 60%;
+  width: 60%;
 }
 
 .thesis-left video{
-    width: 100%;
-    border-radius: 6px;
+  width: 100%;
+  border-radius: 6px;
 }
 
 .thesis-left h3{
-    margin-top: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+  margin-bottom: 8px; 
 }
 
 .thesis-left p {
-    columns:gray;
-    line-height: 1.6;
+  color: #666; 
+  line-height: 1.6;
 }
 
 .thesis-right{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-md);
-}
-.thesis-right h4{
-    margin-top: var(--spacing-md);
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
 }
 
-.thesis-right p {
-    columns:gray;
-    line-height: 1.6;
+.thesis-card{
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 16px; 
+  align-items: center;
+}
+
+.thesis-box-img{
+  width: 35%; 
+  flex-shrink: 0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-right: var(--spacing-md); 
+}
+
+.thesis-box-img img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.thesis-card-content{
+  width: 65%;
+}
+
+.thesis-card-content h4{
+  font-size: 1rem;
+  margin: 0 0 8px 0; 
+}
+
+.thesis-card-content p{
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
 }
 
 .footer{
-    margin-top: var(--spacing-xl);
-    border-top: 1px solid #ddd;
-    padding: var(--spacing-lg) 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin-top: var(--spacing-xl);
+  border-top: 1px solid #ddd;
+  padding: var(--spacing-md) var(--spacing-lg); 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.footer p{
+.footer p {
+  margin: 0;
+  color: gray;
+}
+
+.footer-links{
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a{
+  color: gray;
+  text-decoration: none;
+}
+
+.footer-links a:hover{
+  color: blue;
+}
+
+/* Navigation menu links visibility for desktop/mobile */
+.mobile-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* 1. Header Section */  
+ @media screen and (max-width: 768px) {
+
+    /* Header */
+    .header {
+        height: 64px;
+        padding: 0;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    /* ซ่อนโลโก้และข้อความด้านซ้าย */
+    .logo-container {
+        display: none;
+    }
+
+    /* ซ่อนเมนู Desktop */
+    .desktop-link {
+        display: none;
+    }
+
+    /* Navigation */
+    .nav-menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+    }
+
+    /* แสดงไอคอนทั้ง 4 */
+    .mobile-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        height: 64px;
+    }
+
+    .mobile-icon img {
+        width: 30px;
+        height: 30px;
+        display: block;
+    }
+}
+  /* 2. Hero Section */
+  .hero-section {
+    flex-direction: column;
+    margin: 0; /* Reset margins on mobile */
+    border-radius: 0;
+  }
+  
+  .box-hero-img {
+    width: 100%;
+    min-height: auto;
+  }
+  
+  .hero-content {
+    width: 100%;
+    min-height: auto;
+    padding: 32px 16px; /* Top/Bottom 32px, Left/Right 16px */
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 32px; /* Spacing between title and paragraph */
+  }
+  
+  .hero-content p {
+    margin-bottom: 24px; /* Spacing between paragraph and button */
+  }
+  
+  .btn-start {
+    width: 100%; /* Stretches to full width on mobile */
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /* 3. Main Content Section (Featured & Sidebar) */
+  .main-container {
+    flex-direction: column;
     margin: 0;
-    color: grey;
-}
+    gap: 0;
+  }
+  
+  /* Hide left featured column on mobile */
+  .featured-column {
+    display: none;
+  }
+  
+  .side-column {
+    width: 100%;
+    padding: 32px 16px; /* 32px bottom gap, 16px sides */
+    gap: 64px; /* Labeled 64px gap between event cards */
+  }
+  
+  .event-card {
+    flex-direction: column;
+    padding: 16px; /* Labeled 16px padding top/left */
+    align-items: flex-start;
+  }
+  
+  .event-box-img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 16px; /* Labeled 16px between image and title */
+  }
+  
+  .event-content {
+    width: 100%;
+  }
 
-.footer-link{
-    display: flex;
-    gap: 20px;
-}
+  /* 4. Start Learning Section */
+  .courses-section {
+    margin-top: 0;
+    padding: 32px 16px; /* Spacing top 32px, padding left/right 16px */
+    background-color: #ffffff;
+  }
+  
+  .courses-section .section-title {
+    margin-bottom: 16px; /* Labeled 16px below Start learning title */
+  }
+  
+  .courses-grid {
+    grid-template-columns: 1fr;
+    gap: 8px; /* Labeled 8px gap between cards */
+  }
+  
+  .course-card {
+    background-color: var(--bg-light); /* Grey background for cards on mobile */
+    border: none;
+    border-radius: 0;
+  }
+  
+  /* Hide course images, tags, and description text on mobile */
+  .course-box,
+  .course-content .course-tag,
+  .course-content p {
+    display: none;
+  }
+  
+  .course-content {
+    padding: 16px; /* Labeled 16px padding-top/left */
+  }
+  
+  .course-content h3 {
+    font-size: 1.1rem;
+    margin: 0;
+  }
 
-.footer-link a{
-    color:gray;
-    text-decoration: none;
-}
+  /* 5. Thesis Section */
+  .thesis-section {
+    margin: 0;
+    padding: 32px 16px 24px 16px; /* Top 32px, sides 16px, bottom 24px before footer */
+  }
+  
+  .thesis-section .section-title {
+    margin-bottom: 16px; /* Labeled 16px below Thesis exhibits title */
+  }
+  
+  .thesis-container {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .thesis-left {
+    width: 100%;
+  }
+  
+  /* Hide video description/info and right column completely on mobile */
+  .thesis-left-body,
+  .thesis-right {
+    display: none;
+  }
 
-.footer-link a:hover{
-    color:blue;
+  /* 6. Footer Section */
+  .footer {
+    margin-top: 0;
+    padding: 16px; /* Labeled 16px top/bottom, and 16px sides */
+  }
+  
+  .footer-links {
+    display: none; /* Hide terms and privacy links on mobile */
+  }
 }
