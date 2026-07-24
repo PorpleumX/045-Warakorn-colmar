@@ -24,11 +24,11 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 64px;
     padding: 0 var(--spacing-lg);
     background-color: rgb(255, 252, 252);
     border-bottom: 2px solid black;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
 }
 
 .logo-container{
@@ -49,12 +49,12 @@ body{
 .logo-dark{
     color: gray;
     font-weight: normal;
-    margin-left: 3px;
+    margin-left: -5px;
 }
 .nav-menu{
     display: flex;
     align-items: center;
-    gap: var(--spacing-lg);
+    gap: var(--spacing-md);
 }
 
 .nav-menu a{
